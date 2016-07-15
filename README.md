@@ -11,7 +11,7 @@ available [here](https://github.com/jupyter/notebook).
 
 The following notebooks have been rendered for your convenience.
 
-1. [What is the Jupyter Notebook](examples/notebooks/Jupyter for Palmetto Overview.ipynb)
+1. [Introduction to Jupyter for the Palmetto Cluster](examples/notebooks/Jupyter for Palmetto Overview.ipynb)
 1. [Starting a Notebook Server on the Palmetto Cluster](examples/notebooks/Notebook Server on Palmetto.ipynb)
 1. [Notebook Basics](examples/notebooks/Notebook Basics.ipynb)
 1. [Running Code](examples/notebooks/Runnin Code.ipynb)
