@@ -8,13 +8,18 @@ The examples in this repository are borrowed from
 the official Jupyter notebook documentation
 available [here](https://github.com/jupyter/notebook).
 
-1. [Introduction to Jupyter for the Palmetto Cluster](examples/notebooks/Jupyter for Palmetto Overview.ipynb)
-1. [Starting a Notebook Server on the Palmetto Cluster](examples/notebooks/Notebook Server on Palmetto.ipynb)
-1. [Notebook Basics](examples/notebooks/Notebook Basics.ipynb)
-1. [Running Code](examples/notebooks/Runnin Code.ipynb)
-1. [Working With Markdown Cells](examples/notebooks/Working With Markdown Cells.ipynb)
-1. [Custom Keyboard Shortcuts](examples/notebooks/Custom Keyboard Shortcuts.ipynb)
-1. [JavaScript Notebook Extensions](examples/notebooks/JavaScript Notebook Extensions.ipynb)
-1. [Importing Notebooks](examples/notebooks/Importing Notebooks.ipynb)
-1. [Connecting with the Qt Console](examples/notebooks/Connecting with the Qt Console.ipynb)
-1. [Typesetting Equations](examples/notebooks/Typesetting Equations.ipynb)
+1. [Introduction to Jupyter for the Palmetto Cluster][intro]
+1. [Starting a Notebook Server on the Palmetto Cluster][starting-server]
+1. [Notebook Basics][basics]
+1. [Running Code][code]
+1. [Working With Markdown Cells][markdown]
+1. [Typesetting Equations][equations]
+1. [Custom Keyboard Shortcuts][keyboard-shortcuts]
+
+[intro](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Jupyter for Palmetto Overview.ipynb)
+[starting-server](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Notebook Server on Palmetto.ipynb)
+[basics](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Notebook Basics.ipynb)
+[code](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Running Code.ipynb)
+[markdown](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Working With Markdown Cells.ipynb)
+[equations](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Typesetting Equations.ipynb)
+[keyboard-shortcuts](https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Custom Keyboard Shortcuts.ipynb)
