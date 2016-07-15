@@ -4,12 +4,9 @@ Welcome to the user's guide for
 Jupyterhub for Palmetto cluster.
 This guide provides an introduction to the Jupyter interface
 to Clemson University's Palmetto cluster.
-
 The examples in this repository are borrowed from
 the official Jupyter notebook documentation
 available [here](https://github.com/jupyter/notebook).
-
-The following notebooks have been rendered for your convenience.
 
 1. [Introduction to Jupyter for the Palmetto Cluster](examples/notebooks/Jupyter for Palmetto Overview.ipynb)
 1. [Starting a Notebook Server on the Palmetto Cluster](examples/notebooks/Notebook Server on Palmetto.ipynb)
