@@ -16,10 +16,10 @@ available [here](https://github.com/jupyter/notebook).
 1. [Typesetting Equations][equations]
 1. [Custom Keyboard Shortcuts][keyboard-shortcuts]
 
-[intro]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Jupyter_for_Palmetto_Overview.ipynb
-[starting-server]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Notebook_Server_on_Palmetto.ipynb
-[basics]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Notebook_Basics.ipynb
-[code]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Running_Code.ipynb
-[markdown]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Working_With_Markdown_Cells.ipynb
-[equations]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Typesetting_Equations.ipynb
-[keyboard-shortcuts]: https://nbviewer.jupyter.org/github/clemsonciti/jupyterhub-userdocs/tree/master/examples/notebooks/Custom_Keyboard_Shortcuts.ipynb
+[intro]: examples/notebooks/Jupyter_for_Palmetto_Overview.html
+[starting-server]: examples/notebooks/Notebook_Server_on_Palmetto.html
+[basics]: examples/notebooks/Notebook_Basics.html
+[code]: examples/notebooks/Running_Code.html
+[markdown]: examples/notebooks/Working_With_Markdown_Cells.html
+[equations]: examples/notebooks/Typesetting_Equations.html
+[keyboard-shortcuts]: examples/notebooks/Custom_Keyboard_Shortcuts.html
