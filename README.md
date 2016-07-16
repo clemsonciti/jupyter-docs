@@ -16,10 +16,10 @@ available [here](https://github.com/jupyter/notebook).
 1. [Typesetting Equations][equations]
 1. [Custom Keyboard Shortcuts][keyboard-shortcuts]
 
-[intro]: examples/notebooks/Jupyter_for_Palmetto_Overview.html
-[starting-server]: examples/notebooks/Notebook_Server_on_Palmetto.html
-[basics]: examples/notebooks/Notebook_Basics.html
-[code]: examples/notebooks/Running_Code.html
-[markdown]: examples/notebooks/Working_With_Markdown_Cells.html
-[equations]: examples/notebooks/Typesetting_Equations.html
-[keyboard-shortcuts]: examples/notebooks/Custom_Keyboard_Shortcuts.html
+[intro]: notebooks/Jupyter_for_Palmetto_Overview.html
+[starting-server]: notebooks/Notebook_Server_on_Palmetto.html
+[basics]: notebooks/Notebook_Basics.html
+[code]: notebooks/Running_Code.html
+[markdown]: notebooks/Working_With_Markdown_Cells.html
+[equations]: notebooks/Typesetting_Equations.html
+[keyboard-shortcuts]: notebooks/Custom_Keyboard_Shortcuts.html
