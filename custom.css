@@ -1,0 +1,9 @@
+.navbar-default {
+    margin-left: 100px;
+    margin-right: 50px;
+
+}
+div#notebook-container {
+    padding: 0px;
+    box-shadow: none;
+}
