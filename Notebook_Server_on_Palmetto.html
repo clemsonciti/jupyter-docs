@@ -186,10 +186,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Running-a-Notebook-Server-on-Palmetto-Cluster">Running a Notebook Server on Palmetto Cluster<a class="anchor-link" href="#Running-a-Notebook-Server-on-Palmetto-Cluster">&#182;</a></h1><p>Running a notebook server on the Palmetto cluster requires no configuation,
-and no additional software other than a web browser running on your local machine
-(workstation or laptop).
-Of course, you will need an account on the Palmetto cluster.</p>
+<h1 id="Running-a-Notebook-Server-on-Palmetto-Cluster">Running a Notebook Server on Palmetto Cluster<a class="anchor-link" href="#Running-a-Notebook-Server-on-Palmetto-Cluster">&#182;</a></h1><p>Running a Jupyter notebook server on the cluster requires no software or configuration
+other than a web browser on your local machine (laptop or workstation).
+You will also need an account on the Palmetto cluster.
+A new account can be requested by all Clemson students, faculty or staff
+<a href="http://citi.clemson.edu/new-account/">here</a>.</p>
 
 </div>
 </div>
@@ -199,26 +200,53 @@ Of course, you will need an account on the Palmetto cluster.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p>Start by visiting the following URL; please note that you will likely have to use a "private" or "incognito" window. Click on <code>File-&gt;New Private Window</code> or <code>File-&gt;New Incognito Window</code> in your browser.</p>
+<p><strong>1.</strong> Start by visiting <a href="palmetto.clemson.edu/jupyterhub]">palmetto.clemson.edu/jupyterhub</a>.</p>
 
-<pre><code>http://www.palmetto.clemson.edu/jupyterhub</code></pre>
-</li>
-<li><p>Log in with your Palmetto user ID and password:</p>
-<p><img src="images/palmetto_login.png"></p>
-</li>
-<li><p>Once you are logged in, click on "Start my server" to start a notebook server.</p>
-<p><img src="images/palmetto_start_my_server.png"></p>
-</li>
-<li><p>You will be taken to the notebook spawner page. Here, you can select the compute resources you will
-need access to while working with the notebook server.</p>
-<p><img src="images/palmetto_spawner_options.png"></p>
-</li>
-<li><p>Select the options you want, and click on "Spawn" to start the Notebook server.
-This will open up the Notebook dashboard.</p>
-<p><img src="images/palmetto_dashboard.png"></p>
-</li>
-</ol>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/palmetto_login.png" width=600px, style="float:right">
+<strong>2.</strong> Log in with your Palmetto user ID and password:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/palmetto_start_my_server.png" width=600px style="float:right">
+<strong>3.</strong>  Once you are logged in, click on "Start my server" to start a notebook server.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/palmetto_spawner_options.png" width=600px style="float:right">
+<strong>4.</strong>  You will be taken to the notebook spawner page. Here, you can select the compute resources you will
+need access to while working with the notebook server. Resource "chunks" can be thought of as "virtual" nodes. When you request two chunks with 3 CPU cores, 8 GB of RAM, and 1 GPU, you have access to 6 CPU cores, 24 GB of ram and 2 GPUs. However, these resources may reside in two distinct physical nodes of the cluster, or on the same physical node.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/palmetto_dashboard.png" width=600px style="float:right">
+<strong>5.</strong>  If the resources you request are available, a notebook server will be started for you. This will open up the Notebook <strong>dashboard</strong>, where you will see the files and directories in your "home" directory on the Palmetto cluster. If you have never used the cluster before, your home directory will likely be empty.</p>
+<p><strong>Note:</strong> If you see an error when attempting to spawn a notebook server, or if this page refuses to load, try refreshing the page after a while.</p>
 
 </div>
 </div>
