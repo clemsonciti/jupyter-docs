@@ -198,7 +198,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Your-session">Your session<a class="anchor-link" href="#Your-session">&#182;</a></h3><p>Your session is active for as long as you requested "wall time" when spawning the notebook server. If you exceed the allocated wall time, your notebook server will become unresponsive, and any unsaved work may be lost. You can stop your notebook server by clicking on the "Control Panel" button on the top right, and selecting "Stop My Server". You can also log out of your server by clicking on "Logout". This does not stop the notebook server, which will remain active for the entire allocated wall time. Logging back in will take you to the running notebook server.</p>
+<h3 id="Your-session">Your session<a class="anchor-link" href="#Your-session">&#182;</a></h3><p><img src="images/jupyterhub-control-panel.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
+<p>Your session is active for as long as you requested "wall time" when spawning the notebook server. If you exceed the allocated wall time, your notebook server will become unresponsive, and any unsaved work may be lost. You can stop your notebook server by clicking on the <strong>Control Panel</strong> button on the top right, and selecting <strong>Stop My Server</strong>. You can also log out of your server by clicking on <strong>Logout</strong>. This does not stop the notebook server, which will remain active for the entire allocated wall time. Logging back in will take you to the running notebook server.</p>
 
 </div>
 </div>
@@ -208,7 +209,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="The-dashboard">The dashboard<a class="anchor-link" href="#The-dashboard">&#182;</a></h3><p>The dashboard is the primary interface of the notebook server. You can navigate to the dashboard from any page by clicking on the "Jupyter" logo on the top left of the page. By default, the dashboard has three <em>tabs</em> named "Files", "Running" and "IPython Clusters".</p>
+<h3 id="The-dashboard">The dashboard<a class="anchor-link" href="#The-dashboard">&#182;</a></h3><figure class="figure">
+<img src="images/jupyterhub-file-browser.png" width=500px style="float:right; border:1px solid; margin-left:50px">
+</figure><p>The dashboard is the primary interface of the notebook server. You can navigate to the dashboard from any page by clicking on the "Jupyter" logo on the top left of the page. By default, the dashboard has three <em>tabs</em> named <strong>Files</strong>, <strong>Running</strong> and <strong>IPython Clusters</strong>.</p>
 
 </div>
 </div>
@@ -218,7 +221,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Files-and-folders">Files and folders<a class="anchor-link" href="#Files-and-folders">&#182;</a></h3><p>The "Files" tab of the dashboard displays the file explorer, which lets you interact with files and folders stored on the Palmetto cluster. Clicking on an item (file or folder) opens it. Checking the box next to an item lets you perform actions on it, such as deleting or renaming.</p>
+<h3 id="Files-and-folders">Files and folders<a class="anchor-link" href="#Files-and-folders">&#182;</a></h3><p><img src="images/dashboard_files_tab_run.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
+<p>The <strong>Files</strong> tab of the dashboard displays the file explorer, which lets you interact with files and folders stored on the Palmetto cluster. Clicking on an item (file or folder) opens it. Checking the box next to an item lets you perform actions on it, such as deleting or renaming.</p>
 <p>You can create new files or folders by clicking on the "New" button on the top right of the file explorer.</p>
 
 </div>
@@ -229,16 +233,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Terminals">Terminals<a class="anchor-link" href="#Terminals">&#182;</a></h3><p>To start a terminal session, click on "New", and then "Terminal" on the top right of the file explorer. This opens a terminal running on a <strong>compute node</strong> of the cluster. You can have several terminals open at the same time (simply click on New-&gt;Terminal to open another one). You can always <code>ssh</code> into the user/login node of the cluster:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Terminals">Terminals<a class="anchor-link" href="#Terminals">&#182;</a></h3><p><img src="images/jupyterhub-terminal.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
+<p>To start a terminal session, click on <strong>New</strong>, and then <strong>Terminal</strong> on the top right of the file explorer. This opens a terminal running on a compute node of the cluster. You can have several terminals open at the same time. You can always <code>ssh</code> into the user/login node of the cluster:</p>
 
 <pre><code>$ ssh user001</code></pre>
 
@@ -250,7 +246,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Notebooks">Notebooks<a class="anchor-link" href="#Notebooks">&#182;</a></h3><p>Finally, you can create Jupyter notebooks by clicking "New", and selecting a notebook "kernel" to use. Kernels are processes that run interactive code in a particular programming language and return output to the user. The default kernels available are:</p>
+<h3 id="Notebooks">Notebooks<a class="anchor-link" href="#Notebooks">&#182;</a></h3><p><img src="images/jupyter-notebook-mode.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
+<p>Finally, you can create Jupyter notebooks by clicking <strong>New</strong>, and selecting a notebook <em>kernel</em> to use. Kernels are processes that run interactive code in a particular programming language and return output to the user. The default kernels available are:</p>
 <ol>
 <li>Python 3</li>
 <li>R</li>
@@ -266,7 +263,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Running-notebooks-and-terminals">Running notebooks and terminals<a class="anchor-link" href="#Running-notebooks-and-terminals">&#182;</a></h3><p>The "Running" tab of the dashboard shows all running notebooks and terminals. Simply closing the browser window with a running notebook or terminal does not "shut down" that notebook or terminal. They need to be explicitly shut down from this tab.</p>
+<h3 id="Running-notebooks-and-terminals">Running notebooks and terminals<a class="anchor-link" href="#Running-notebooks-and-terminals">&#182;</a></h3><p><img src="images/dashboard_running_tab.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
+<p>The <strong>Running</strong> tab of the dashboard shows all running notebooks and terminals. Simply closing the browser window with a running notebook or terminal does not shut down that notebook or terminal. They need to be explicitly shut down from this tab.</p>
 
 </div>
 </div>
