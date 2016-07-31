@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Custom_Keyboard_Shortcuts</title>
+<title>resources</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -189,7 +189,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Keyboard-Shortcut-Customization">Keyboard Shortcut Customization<a class="anchor-link" href="#Keyboard-Shortcut-Customization">&#182;</a></h1>
+<h1 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -198,7 +198,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Starting with IPython 2.0 keyboard shortcuts in command and edit mode are fully customizable. These customizations are made using the Jupyter JavaScript API. Here is an example that makes the <code>r</code> key available for running a cell:</p>
+<p>This page contains external resources for using Jupyter.</p>
 
 </div>
 </div>
@@ -208,119 +208,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
-
-<span class="nx">Jupyter</span><span class="p">.</span><span class="nx">keyboard_manager</span><span class="p">.</span><span class="nx">command_shortcuts</span><span class="p">.</span><span class="nx">add_shortcut</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="p">{</span>
-    <span class="nx">help</span> <span class="o">:</span> <span class="s1">&#39;run cell&#39;</span><span class="p">,</span>
-    <span class="nx">help_index</span> <span class="o">:</span> <span class="s1">&#39;zz&#39;</span><span class="p">,</span>
-    <span class="nx">handler</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">execute_cell</span><span class="p">();</span>
-        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-    <span class="p">}}</span>
-<span class="p">);</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>"By default the keypress <code>r</code>, while in command mode, changes the type of the selected cell to <code>raw</code>.  This shortcut is overridden by the code in the previous cell, and thus the action no longer be available via the keypress <code>r</code>."</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>There are a couple of points to mention about this API:</p>
-<ul>
-<li>The <code>help_index</code> field is used to sort the shortcuts in the Keyboard Shortcuts help dialog. It defaults to <code>zz</code>.</li>
-<li>When a handler returns <code>false</code> it indicates that the event should stop propagating and the default action should not be performed. For further details about the <code>event</code> object or event handling, see the jQuery docs.</li>
-<li>If you don't need a <code>help</code> or <code>help_index</code> field, you can simply pass a function as the second argument to <code>add_shortcut</code>.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
-
-<span class="nx">Jupyter</span><span class="p">.</span><span class="nx">keyboard_manager</span><span class="p">.</span><span class="nx">command_shortcuts</span><span class="p">.</span><span class="nx">add_shortcut</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">IPython</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">execute_cell</span><span class="p">();</span>
-    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-<span class="p">});</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Likewise, to remove a shortcut, use <code>remove_shortcut</code>:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
-
-<span class="nx">Jupyter</span><span class="p">.</span><span class="nx">keyboard_manager</span><span class="p">.</span><span class="nx">command_shortcuts</span><span class="p">.</span><span class="nx">remove_shortcut</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">);</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>If you want your keyboard shortcuts to be active for all of your notebooks, put the above API calls into your <code>custom.js</code> file.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Of course we provide name for majority of existing action so that you do not have to re-write everything, here is for example how to bind <code>r</code> back to it's initial behavior:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
-
-<span class="nx">Jupyter</span><span class="p">.</span><span class="nx">keyboard_manager</span><span class="p">.</span><span class="nx">command_shortcuts</span><span class="p">.</span><span class="nx">add_shortcut</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;jupyter-notebook:change-cell-to-raw&#39;</span><span class="p">);</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
 </div>

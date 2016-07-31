@@ -1,4 +1,3 @@
-
 SOURCE_FILES = *.ipynb
 HTML_FILES = $(patsubst %.ipynb,%.html,$(SOURCE_FILES))
 
