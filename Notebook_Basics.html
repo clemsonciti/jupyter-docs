@@ -198,17 +198,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-Notebook-dashboard">The Notebook dashboard<a class="anchor-link" href="#The-Notebook-dashboard">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>When you first start the notebook server, your browser will open to the notebook dashboard. The dashboard serves as a home page for the notebook. Its main purpose is to display the notebooks and files in the current directory. For example, here is a screenshot of the dashboard page for the <code>examples</code> directory in the Jupyter repository:</p>
-<p><img src="images/dashboard_files_tab.png" width="791px"/></p>
+<h3 id="Starting-up-notebooks">Starting up notebooks<a class="anchor-link" href="#Starting-up-notebooks">&#182;</a></h3><p>To create a new notebook, click on the "New" button on the top right of the Files tab of the dashboard. The different options listed in this menu are the available <strong>kernels</strong> for writing notebooks. The kernel is what decides which programming language to use to run notebook commands, and each notebook is associated with a single kernel.</p>
+<p><img src="images/jupyter-kernel-options.png" width="202px" /></p>
+<p>When you select a kernel, the notebook user interface (UI) is launched with the corresponding kernel running in the background. On the top right of the notebook window, you will see messages about the kernel:</p>
+<p><img src="images/jupyter-kernel-starting.png" width="500px">
+<img src="images/jupyter-kernel-ready.png" width="390px" style="margin-left:360px"></p>
+<p>By default, notebooks are named "Untitled" (with an <code>.ipynb</code> extension). You can click on the name of the notebook on the top left of the notebook UI to change its name.</p>
 
 </div>
 </div>
@@ -218,9 +213,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The top of the notebook list displays clickable breadcrumbs of the current directory. By clicking on these breadcrumbs or on sub-directories in the notebook list, you can navigate your file system.</p>
-<p>To create a new notebook, click on the "New" button at the top of the list and select a kernel from the dropdown (as seen below).  Which kernels are listed depend on what's installed on the server.  Some of the kernels in the screenshot below may not exist as an option to you.</p>
-<p><img src="images/dashboard_files_tab_new.png" width="202px" /></p>
+<h3 id="Uploading-notebooks">Uploading notebooks<a class="anchor-link" href="#Uploading-notebooks">&#182;</a></h3><p>Notebooks and files can be uploaded from your local machine to the Palmetto by using the "Upload" button on the Files tab of the dashboard.</p>
 
 </div>
 </div>
@@ -230,18 +223,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Notebooks and files can be uploaded to the current directory by dragging a notebook file onto the notebook list or by the "click here" text above the list.</p>
-<p>The notebook list shows green "Running" text and a green notebook icon next to running notebooks (as seen below). Notebooks remain running until you explicitly shut them down; closing the notebook's page is not sufficient.</p>
+<h3 id="Shutting-down-notebooks">Shutting down notebooks<a class="anchor-link" href="#Shutting-down-notebooks">&#182;</a></h3><p>The file browser shows green "Running" text and a green notebook icon next to running notebooks (as seen below). Notebooks remain running until you explicitly shut them down; closing the notebook's page is not sufficient.</p>
 <p><img src="images/dashboard_files_tab_run.png" width="777px"/></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>To shutdown, delete, duplicate, or rename a notebook check the checkbox next to it and an array of controls will appear at the top of the notebook list (as seen below).  You can also use the same operations on directories and files when applicable.</p>
 <p><img src="images/dashboard_files_tab_btns.png" width="301px" /></p>
 
@@ -265,7 +248,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Overview-of-the-Notebook-UI">Overview of the Notebook UI<a class="anchor-link" href="#Overview-of-the-Notebook-UI">&#182;</a></h2>
+<h3 id="Overview-of-the-Notebook-UI">Overview of the Notebook UI<a class="anchor-link" href="#Overview-of-the-Notebook-UI">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -274,7 +257,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you create a new notebook or open an existing one, you will be taken to the notebook user interface (UI). This UI allows you to run code and author notebook documents interactively. The notebook UI has the following main areas:</p>
+<p>If you create a new notebook or open an existing one, you will be taken to the notebook user interface. This UI allows you to run code and author notebook documents interactively. The notebook UI has the following main areas:</p>
 <ul>
 <li>Menu</li>
 <li>Toolbar</li>
@@ -290,7 +273,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Modal-editor">Modal editor<a class="anchor-link" href="#Modal-editor">&#182;</a></h2>
+<h3 id="Modal-editor">Modal editor<a class="anchor-link" href="#Modal-editor">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -299,7 +282,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Starting with IPython 2.0, the Jupyter Notebook has a modal user interface. This means that the keyboard does different things depending on which mode the Notebook is in. There are two modes: edit mode and command mode.</p>
+<p>The Jupyter Notebook has a "modal" user interface. This means that the keyboard does different things depending on which "mode" the Notebook is in. There are two modes: <em>edit</em> mode and <em>command</em> mode.</p>
 
 </div>
 </div>
@@ -309,7 +292,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Edit-mode">Edit mode<a class="anchor-link" href="#Edit-mode">&#182;</a></h3>
+<h4 id="Edit-mode">Edit mode<a class="anchor-link" href="#Edit-mode">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -341,7 +324,7 @@ Enter edit mode by pressing `Enter` or using the mouse to click on a cell's edit
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Command-mode">Command mode<a class="anchor-link" href="#Command-mode">&#182;</a></h3>
+<h4 id="Command-mode">Command mode<a class="anchor-link" href="#Command-mode">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -352,7 +335,7 @@ Enter edit mode by pressing `Enter` or using the mouse to click on a cell's edit
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Command mode is indicated by a grey cell border with a blue left margin:</p>
 <p><img src="images/command_mode.png"></p>
-<p>When you are in command mode, you are able to edit the notebook as a whole, but not type into individual cells. Most importantly, in command mode, the keyboard is mapped to a set of shortcuts that let you perform notebook and cell actions efficiently. For example, if you are in command mode and you press <code>c</code>, you will copy the current cell - no modifier is needed.</p>
+<p>When you are in command mode, you are able to edit the notebook as a whole, but not type into individual cells. Most importantly, in command mode, the keyboard is mapped to a set of shortcuts that let you perform notebook and cell actions efficiently. For example, if you are in command mode and you press <code>c</code>, you will copy the current cell. If you then press <code>v</code>, you will paste the copied cell below the current cell.</p>
 
 </div>
 </div>
@@ -362,8 +345,8 @@ Enter edit mode by pressing `Enter` or using the mouse to click on a cell's edit
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-error">
-Don't try to type into a cell in command mode; unexpected things will happen!
+<div class="alert alert-warning">
+Be aware of which mode you are in at all times. Don't try to type into a cell in command mode; unexpected things will happen!
 </div>
 </div>
 </div>
@@ -384,7 +367,7 @@ Enter command mode by pressing `Esc` or using the mouse to click *outside* a cel
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mouse-navigation">Mouse navigation<a class="anchor-link" href="#Mouse-navigation">&#182;</a></h2>
+<h3 id="Mouse-navigation">Mouse navigation<a class="anchor-link" href="#Mouse-navigation">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -426,7 +409,7 @@ Enter command mode by pressing `Esc` or using the mouse to click *outside* a cel
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Keyboard-Navigation">Keyboard Navigation<a class="anchor-link" href="#Keyboard-Navigation">&#182;</a></h2>
+<h3 id="Keyboard-Navigation">Keyboard Navigation<a class="anchor-link" href="#Keyboard-Navigation">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -448,14 +431,67 @@ Enter command mode by pressing `Esc` or using the mouse to click *outside* a cel
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We recommend learning the command mode shortcuts in the following rough order:</p>
-<ol>
-<li>Basic navigation: <code>enter</code>, <code>shift-enter</code>, <code>up/k</code>, <code>down/j</code></li>
-<li>Saving the notebook: <code>s</code></li>
-<li>Change Cell types: <code>y</code>, <code>m</code>, <code>1-6</code>, <code>t</code></li>
-<li>Cell creation: <code>a</code>, <code>b</code></li>
-<li>Cell editing: <code>x</code>, <code>c</code>, <code>v</code>, <code>d</code>, <code>z</code></li>
-<li>Kernel operations: <code>i</code>, <code>0</code> (press twice)</li>
-</ol>
+<table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>enter</code></td>
+<td>Enter edit mode from command mode</td>
+</tr>
+<tr>
+<td><code>shift-enter</code></td>
+<td>Execute cell</td>
+</tr>
+<tr>
+<td><code>up/k</code>, <code>down/j</code></td>
+<td>Move to cell above or below</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>Save notebook</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td>Change cell type to code cell</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td>Change cell type to Markdown cell</td>
+</tr>
+<tr>
+<td><code>1-6</code></td>
+<td>Change cell type to heading (levels 1-6)</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>Create cell above current cell</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td>Create cell below current cell</td>
+</tr>
+<tr>
+<td><code>x</code>, <code>c</code>, <code>v</code></td>
+<td>Cut, copy, paste cell</td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td>Delete cell</td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td>Undo cell deletion</td>
+</tr>
+<tr>
+<td><code>ii</code>, <code>00</code></td>
+<td>Interrupt kernel, restart kernel</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
