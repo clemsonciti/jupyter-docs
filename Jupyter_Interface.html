@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>troubleshooting</title>
+<title>Jupyter_Interface</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -189,7 +189,16 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Troubleshooting">Troubleshooting<a class="anchor-link" href="#Troubleshooting">&#182;</a></h1><p>This page lists frequently asked questions and frequently encountered problems, and possible solutions to them.</p>
+<h1 id="The-Jupyter-Interface">The Jupyter Interface<a class="anchor-link" href="#The-Jupyter-Interface">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Your-session">Your session<a class="anchor-link" href="#Your-session">&#182;</a></h3><p>Your session is active for as long as you requested "wall time" when spawning the notebook server. If you exceed the allocated wall time, your notebook server will become unresponsive, and any unsaved work may be lost. You can stop your notebook server by clicking on the "Control Panel" button on the top right, and selecting "Stop My Server". You can also log out of your server by clicking on "Logout". This does not stop the notebook server, which will remain active for the entire allocated wall time. Logging back in will take you to the running notebook server.</p>
 
 </div>
 </div>
@@ -199,7 +208,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="I-can't-log-in">I can't log in<a class="anchor-link" href="#I-can't-log-in">&#182;</a></h3><p>First, ensure that you have an account on the Palmetto cluster. You can request an account <a href="https://citi.sites.clemson.edu/new-account/">here</a>. If you are repeatedly re-directed to the login page after entering your password correctly, you may need to delete your browser's cookies and try again.</p>
+<h3 id="The-dashboard">The dashboard<a class="anchor-link" href="#The-dashboard">&#182;</a></h3><p>The dashboard is the primary interface of the notebook server. You can navigate to the dashboard from any page by clicking on the "Jupyter" logo on the top left of the page. By default, the dashboard has three <em>tabs</em> named "Files", "Running" and "IPython Clusters".</p>
 
 </div>
 </div>
@@ -209,19 +218,55 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="I-can-log-in,-but-when-I-click-on-&quot;Spawn&quot;,-nothing-happens">I can log in, but when I click on "Spawn", nothing happens<a class="anchor-link" href="#I-can-log-in,-but-when-I-click-on-&quot;Spawn&quot;,-nothing-happens">&#182;</a></h3><p>This can happen for various reasons:</p>
+<h3 id="Files-and-folders">Files and folders<a class="anchor-link" href="#Files-and-folders">&#182;</a></h3><p>The "Files" tab of the dashboard displays the file explorer, which lets you interact with files and folders stored on the Palmetto cluster. Clicking on an item (file or folder) opens it. Checking the box next to an item lets you perform actions on it, such as deleting or renaming.</p>
+<p>You can create new files or folders by clicking on the "New" button on the top right of the file explorer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Terminals">Terminals<a class="anchor-link" href="#Terminals">&#182;</a></h3><p>To start a terminal session, click on "New", and then "Terminal" on the top right of the file explorer. This opens a terminal running on a <strong>compute node</strong> of the cluster. You can have several terminals open at the same time (simply click on New-&gt;Terminal to open another one). You can always <code>ssh</code> into the user/login node of the cluster:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>$ ssh user001</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Notebooks">Notebooks<a class="anchor-link" href="#Notebooks">&#182;</a></h3><p>Finally, you can create Jupyter notebooks by clicking "New", and selecting a notebook "kernel" to use. Kernels are processes that run interactive code in a particular programming language and return output to the user. The default kernels available are:</p>
 <ol>
-<li><p>If the cluster is especially busy: if the resources you request are available, then your notebook server is started immediately. Otherwise, the request for starting the notebook server is "queued". Jupyterhub does not queue requests for a very long time, and your request may have "timed out". You may be successful if you try again after a while.</p>
-</li>
-<li><p>Due to invalid/excessive resource requests: for example, asking for a single CPU core and 64 GB of memory is an invalid request, as single core jobs are currently limited to 15 GB. It may be useful to consult the <a href="http://www.palmetto.clemson.edu/pages/userguide.html">Palmetto user's guide</a> when requesting resources.</p>
-</li>
-<li><p>If you have set up a custom Python environment, or load conflicting modules in your <code>.bashrc</code> or <code>.bash_profile</code>. Try commenting out these sections of your <code>.bashrc</code> or <code>.bash_profile</code>.</p>
-</li>
-<li><p>If you see a browser error, try waiting a while, then refreshing the page.</p>
-</li>
-<li><p>If you still can't log in, please e-mail <a href="mailto:ithelp@clemson.edu">ithelp@clemson.edu</a> and let us know.</p>
-</li>
+<li>Python 3</li>
+<li>R</li>
+<li>MATLAB</li>
 </ol>
+<p>When you select a kernel, the notebook interface is opened in a new tab. See the section on <a href="Notebook_Basics.html">Notebook Basics</a> to get started with creating and editing notebooks.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Running-notebooks-and-terminals">Running notebooks and terminals<a class="anchor-link" href="#Running-notebooks-and-terminals">&#182;</a></h3><p>The "Running" tab of the dashboard shows all running notebooks and terminals. Simply closing the browser window with a running notebook or terminal does not "shut down" that notebook or terminal. They need to be explicitly shut down from this tab.</p>
 
 </div>
 </div>
