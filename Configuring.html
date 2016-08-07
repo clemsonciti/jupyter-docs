@@ -264,25 +264,42 @@ you will need the following lines in your <code>.jhubrc</code>:</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We recommend using either pip or <a href="http://conda.pydata.org/docs/using/index.html">Conda</a> to install Python packages whenever possible. Maintaining Conda environments for different projects is highly recommended.</p>
+<p>For R packages, you can specify the <code>R_LIBS</code> environment variable in your <code>.jhubrc</code>.</p>
 
 </div>
 </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Adding-new-kernels-using-Conda">Adding new kernels using Conda<a class="anchor-link" href="#Adding-new-kernels-using-Conda">&#182;</a></h3>
+<h3 id="Adding-new-kernels">Adding new kernels<a class="anchor-link" href="#Adding-new-kernels">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In addition to the default kernels provided (Python, R, and MATLAB), it is possible to create your own kernels. To install kernels for other languages, see the setup instructions for the language <a href="https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages">here</a>.</p>
+<p>For custom Python kernels, we recommend using <a href="http://conda.pydata.org/docs/using/index.html">Conda</a> environments, and <a href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html">ipykernel</a> to generate a kernel from a Conda environment:</p>
+
+<pre><code>conda create --name myenv python=2.7
+source activate myenv
+conda install jupyter
+python -m ipykernel install --user --name python_custom --display-name "My Python"
+
+</code></pre>
+<p>See the Conda documentation for more details about Conda environments.</p>
+
 </div>
 </div>
 </div>
