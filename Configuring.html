@@ -198,7 +198,60 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Custom-environment">Custom environment<a class="anchor-link" href="#Custom-environment">&#182;</a></h3>
+<p>While the default Jupyter environment is sufficient for performing most basic tasks and writing fairly advanced notebooks, it is possible to configure Jupyter further.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Your-.jhubrc-file">Your .jhubrc file<a class="anchor-link" href="#Your-.jhubrc-file">&#182;</a></h3><p>Before a notebook server is launched,
+some modules get loaded by default.
+In addition to these default modules,
+you can load your own modules,
+define environment variables, etc.,
+in a file called <code>.jhubrc</code> in your home directory.
+All commands in the <code>.jhubrc</code> are executed before your notebook server is launched.</p>
+<p>For example,
+to create a notebook using the MATLAB kernel,
+you will need the following lines in your <code>.jhubrc</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span>module load matlab/2015a zeromq/4.1.5
+<span class="nb">export</span> <span class="nv">MATLAB_EXECUTABLE</span><span class="o">=</span>$MATLAB/bin/matlab
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Similarly, to use MPI in Notebooks, you will need to load an <code>openmpi</code> module in your <code>.jhubrc</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span>module load gcc/4.8.1 openmpi/1.8.4
+</pre></div>
+
 </div>
 </div>
 </div>
@@ -210,6 +263,19 @@ div#notebook {
 <h3 id="Installing-Python/R-packages">Installing Python/R packages<a class="anchor-link" href="#Installing-Python/R-packages">&#182;</a></h3>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
