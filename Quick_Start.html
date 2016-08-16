@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title>
+<title>Quick_Start</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -189,7 +189,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jupyterhub-for-Palmetto-Cluster">Jupyterhub for Palmetto Cluster<a class="anchor-link" href="#Jupyterhub-for-Palmetto-Cluster">&#182;</a></h1>
+<h1 id="Running-your-first-Jupyter-notebook-on-Palmetto">Running your first Jupyter notebook on Palmetto<a class="anchor-link" href="#Running-your-first-Jupyter-notebook-on-Palmetto">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -198,7 +198,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Jupyterhub for Palmetto cluster is a service that enables users to run <a href="http://jupyter.org/">Jupyter</a> on the Palmetto cluster. Jupyter allows users to interact with the cluster entirely from within a web browser, and includes tools such as:</p>
+<p>In this section, you will:</p>
+<ol>
+<li>Download a notebook file (<code>.ipynb</code>) to your local machine (laptop or workstation)</li>
+<li>Upload this file to the Palmetto cluster</li>
+<li>Run it using Jupyter on Palmetto</li>
+</ol>
 
 </div>
 </div>
@@ -208,8 +213,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/jupyterhub-file-browser.png" width=400px style="float:right; border:1px solid; margin-left:50px">
-<img src="images/jupyterhub-text-editor.png" width=400px style="float:left; border:1px solid; margin-left:50px"></p>
+<h2 id="Downloading-the-notebook-to-your-local-machine">Downloading the notebook to your local machine<a class="anchor-link" href="#Downloading-the-notebook-to-your-local-machine">&#182;</a></h2><p>All Jupyter notebooks have the extension (<code>.ipynb</code>) - a result of the Jupyter project being a fork of the <a href="https://ipython.org/">IPython</a> project. The notebook for this exercise can be downloaded <a href="https://raw.githubusercontent.com/clemsonciti/jupyter-welcome/master/index.ipynb">here</a>. If simply clicking on the link doesn't work, try right-clicking on it and selecting "Save Link As..."</p>
 
 </div>
 </div>
@@ -219,10 +223,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>A <strong>text editor</strong> for code and text files. Currently,
-Jupyter supports keybindings for Sublime Text, Vim, and Emacs.</li>
-</ul>
+<h2 id="Uploading-the-notebook-to-the-Palmetto-cluster">Uploading the notebook to the Palmetto cluster<a class="anchor-link" href="#Uploading-the-notebook-to-the-Palmetto-cluster">&#182;</a></h2><p>You can upload any file to the Palmetto cluster via the Jupyter dashboard. Click on the "Upload" button on the top right of the file explorer:</p>
 
 </div>
 </div>
@@ -232,10 +233,18 @@ Jupyter supports keybindings for Sublime Text, Vim, and Emacs.</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/jupyterhub-terminal.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
-<ul>
-<li>A <strong>terminal</strong> for command-line access to the cluster.</li>
-</ul>
+<figure class="figure">
+<img src="images/jupyterhub-file-browser.png" width=500px style="border:1px solid;">
+</figure>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Be aware that there is a limit on the size of files you can upload in this way (~25 MB). Once you've uploaded the file, it should appear in the file browser:</p>
 
 </div>
 </div>
@@ -245,9 +254,9 @@ Jupyter supports keybindings for Sublime Text, Vim, and Emacs.</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/jupyterhub-notebook-example.png" width=500px style="float:right; border:1px solid; margin-left:50px"></p>
-<p>Jupyter also lets users create <strong>Jupyter Notebooks</strong>. Notebooks are rich, interactive documents that can contain live (runnable) code, equations, visualizations and explanatory text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, machine learning and much more.</p>
-
+<figure class="figure">
+<img src="images/jupyterhub-file-uploaded.png" width=500px style="border:1px solid;">
+</figure>
 </div>
 </div>
 </div>
@@ -256,7 +265,7 @@ Jupyter supports keybindings for Sublime Text, Vim, and Emacs.</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To get started, log in to <a href="https://www.palmetto.clemson.edu/jupyterhub">https://www.palmetto.clemson.edu/jupyterhub</a>. See our <a href="documentation.html">documentation</a> page for help. For external resources on Jupyter, and examples of tasks that can be accomplished with Jupyter, see our <a href="resources.html">resources</a> page. Also see our <a href="troubleshooting.html">troubleshooting</a> and <a href="help.html">help</a> pages for troubleshooting problems and getting help.</p>
+<h2 id="Running-the-notebook">Running the notebook<a class="anchor-link" href="#Running-the-notebook">&#182;</a></h2><p>Simply click on the file <code>index.ipynb</code> to run it.</p>
 
 </div>
 </div>
