@@ -198,21 +198,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>While the default Jupyter environment is sufficient for performing most basic tasks and writing fairly advanced notebooks, it is possible to configure Jupyter further.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Your-.jhubrc-file">Your .jhubrc file<a class="anchor-link" href="#Your-.jhubrc-file">&#182;</a></h3><p>Before a notebook server is launched,
+<h3 id="Your-.jhubrc-file">Your <code>.jhubrc</code> file<a class="anchor-link" href="#Your-.jhubrc-file">&#182;</a></h3><p>Before a notebook server is launched,
 some modules get loaded by default.
 In addition to these default modules,
 you can load your own modules,
-define environment variables, etc.,
+and export custom environment variables
 in a file called <code>.jhubrc</code> in your home directory.
 All commands in the <code>.jhubrc</code> are executed before your notebook server is launched.</p>
 <p>For example,
@@ -239,7 +229,8 @@ you will need the following lines in your <code>.jhubrc</code>:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Similarly, to use MPI in Notebooks, you will need to load an <code>openmpi</code> module in your <code>.jhubrc</code>:</p>
+<p>Note that the only commands that will have any effect are <code>module</code> and <code>export</code> commands. The <code>.jhubrc</code> affects only the kernel environments (i.e., the environments of your notebooks), and not the terminal environment.
+The terminal environment can be customized using <code>.bashrc</code> or <code>.bash_profile</code>.</p>
 
 </div>
 </div>
@@ -249,8 +240,16 @@ you will need the following lines in your <code>.jhubrc</code>:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span>module load gcc/4.8.1 openmpi/1.8.4
-</pre></div>
+<h3 id="Installing-additional-Python/R-packages">Installing additional Python/R packages<a class="anchor-link" href="#Installing-additional-Python/R-packages">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The default Jupyter environment supports Python and R kernels which are pre-loaded with several common packages for scientific computing and data analysis. It's also easy to install your own packages/libraries for use with these kernels.</p>
 
 </div>
 </div>
@@ -260,17 +259,14 @@ you will need the following lines in your <code>.jhubrc</code>:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Installing-Python/R-packages">Installing Python/R packages<a class="anchor-link" href="#Installing-Python/R-packages">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We recommend using either pip or <a href="http://conda.pydata.org/docs/using/index.html">Conda</a> to install Python packages whenever possible. Maintaining Conda environments for different projects is highly recommended.</p>
-<p>For R packages, you can specify the <code>R_LIBS</code> environment variable in your <code>.jhubrc</code>.</p>
+<p>We recommend using either pip or <a href="http://conda.pydata.org/docs/using/index.html">Conda</a> to install
+Python packages whenever possible.
+You can install most Python package using the terminal with the following commands:</p>
+
+<pre><code>$ module add anaconda3/2.5.0
+$ pip install &lt;package_name&gt; --user</code></pre>
+<p>This will make the package available to the Python 3 kernels.</p>
+<p>For R packages, you can define the <code>R_LIBS</code> environment variable in your <code>.jhubrc</code> to specify where libraries get installed and loaded by notebooks.</p>
 
 </div>
 </div>
@@ -292,12 +288,10 @@ you will need the following lines in your <code>.jhubrc</code>:</p>
 <p>In addition to the default kernels provided (Python, R, and MATLAB), it is possible to create your own kernels. To install kernels for other languages, see the setup instructions for the language <a href="https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages">here</a>.</p>
 <p>For custom Python kernels, we recommend using <a href="http://conda.pydata.org/docs/using/index.html">Conda</a> environments, and <a href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html">ipykernel</a> to generate a kernel from a Conda environment:</p>
 
-<pre><code>conda create --name myenv python=2.7
-source activate myenv
-conda install jupyter
-python -m ipykernel install --user --name python_custom --display-name "My Python"
-
-</code></pre>
+<pre><code>$ conda create --name myenv python=2.7
+$ source activate myenv
+$ conda install jupyter
+$ python -m ipykernel install --user --name python_custom --display-name "My Python"</code></pre>
 <p>See the Conda documentation for more details about Conda environments.</p>
 
 </div>
