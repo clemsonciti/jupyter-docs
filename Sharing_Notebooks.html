@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>documentation</title>
+<title>Sharing_Notebooks</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -189,7 +189,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">&#182;</a></h1>
+<h1 id="Sharing-and-Publishing-Notebooks">Sharing and Publishing Notebooks<a class="anchor-link" href="#Sharing-and-Publishing-Notebooks">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -198,16 +198,68 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><a href="Notebook_Server_on_Palmetto.html">Starting a Notebook Server on the Palmetto Cluster</a></li>
-<li><a href="Jupyter_Interface.html">The Jupyter Interface</a></li>
-<li><a href="Quick_Start.html">Quick Start</a></li>
-<li><a href="Notebook_Basics.html">Notebook Basics</a></li>
-<li><a href="Working_With_Markdown_Cells.html">Working With Markdown Cells</a></li>
-<li><a href="Typesetting_Equations.html">Typesetting Equations</a></li>
-<li><a href="Configuring.html">Configuring and Customizing Jupyter</a></li>
-<li><a href="Sharing_Notebooks.html">Sharing and Publishing Notebooks</a></li>
-</ol>
+<p>This section covers the different ways to share and publish Notebooks.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sharing-.ipynb-files">Sharing <code>.ipynb</code> files<a class="anchor-link" href="#Sharing-.ipynb-files">&#182;</a></h2><p>Notebooks are <a href="http://www.json.org/"><code>JSON</code></a> files with the extension <code>.ipynb</code>. These <code>.ipynb</code> files can be opened on any machine with Jupyter installed. The environment used in the Notebook (e.g., specific libraries or packages used in the code) must match the environment of the running Notebook server.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Generating-static-documents-from-Notebooks">Generating static documents from Notebooks<a class="anchor-link" href="#Generating-static-documents-from-Notebooks">&#182;</a></h2><p>Notebooks can be converted from <code>.ipynb</code> to other static formats, such as HTML, LaTeX, PDF, Markdown, reStructured Text, and others. This enables:</p>
+<ul>
+<li>presentation of information in familiar formats, such as PDF.</li>
+<li>publishing of research using LaTeX and opens the door for embedding notebooks in papers.</li>
+<li>collaboration with others who may not use the notebook in their work.</li>
+<li>sharing contents with many people via the web using HTML.</li>
+</ul>
+<p>The simplest way to do this is to click on <code>File &gt; Download as</code> from the Notebook interface. For programmatic conversion of notebooks, and for more control over the layout and appearance, you may want to use the <a href="http://nbconvert.readthedocs.io/en/latest/index.html">nbconvert</a> command-line utility.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sharing-Notebooks-online">Sharing Notebooks online<a class="anchor-link" href="#Sharing-Notebooks-online">&#182;</a></h2><p>Notebooks can be published online in many ways:</p>
+<ul>
+<li>In blogs/websites as HTML format</li>
+<li>On GitHub, which renders Notebooks automatically (<a href="https://github.com/clemsonciti/jupyter-welcome/blob/master/index.ipynb">example</a>)</li>
+<li>On <a href="http://nbviewer.jupyter.org/">nbviewer</a>, a website which renders Notebooks from URLs.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Binder">Binder<a class="anchor-link" href="#Binder">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="http://docs.mybinder.org/">Binder</a> is a service that allows users to share runnable Notebooks. Binder allows you to specify the environment (libraries, packages, etc.,) required for a Notebook to run, and makes this environment available to others through the browser. These Notebooks can be run by others on a public cluster (provided by Binder itself), or a private one that you can configure for use with Binder.</p>
 
 </div>
 </div>
