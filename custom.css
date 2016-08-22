@@ -8,3 +8,40 @@ div#notebook-container {
     box-shadow: none;
     margin-right: 200px;
 }
+
+ /* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #f8f8f8;
+    border: 1px solid;
+    border-color: #e7e7e7;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
